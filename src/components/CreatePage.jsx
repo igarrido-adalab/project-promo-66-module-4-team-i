@@ -1,7 +1,7 @@
 import Preview from './Preview';
 import Form from './Form';
 
-function CreatePage({ data, handleChange }) {
+function CreatePage({ data, handleChange, updateData, handleSave }) {
   return (
     <main className="main">
       <section className="hero">
@@ -15,7 +15,12 @@ function CreatePage({ data, handleChange }) {
       </section>
 
       <Preview data={data} />
-      <Form data={data} handleChange={handleChange} />
+      <Form
+        data={data}
+        handleChange={handleChange}
+        updateData={updateData}
+        handleSave={handleSave}
+      />
     </main>
   );
 }

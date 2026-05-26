@@ -47,6 +47,16 @@ fieldset {
   color: var(--color-white);
 }
 
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .main {
     max-width: 980px;
@@ -293,6 +303,14 @@ fieldset {
 
 .addForm .addForm__hidden {
   display: none;
+}
+
+.addForm .addForm__error {
+  width: 100%;
+  text-align: center;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 .addForm .addForm__2col {
