@@ -20,3 +20,12 @@ The refactored component-based application SHALL maintain all existing functiona
 #### Scenario: Live Preview Functionality
 - **WHEN** a user enters data into the `Form` component
 - **THEN** the `Preview` component updates in real-time to reflect the changes
+
+### Requirement: Component Architecture (Modified for API flow)
+The communication between components for project creation SHALL now include an asynchronous API call before finalizing the save process.
+
+#### Scenario: Complete project creation flow
+- **WHEN** user submits the form
+- **THEN** the system SHALL call the API
+- **AND** if successful, the system SHALL save the result to local storage and reset the form
+

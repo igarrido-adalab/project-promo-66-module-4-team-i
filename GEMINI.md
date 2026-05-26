@@ -53,3 +53,48 @@ El diseño lo podéis inspeccionar en este proyecto de [zeplin](https://scene.ze
 - Las pantallas dentro del Figma son tanto para el proyecto del módulo 3 y el módulo 4, por lo que no es necesario que diseñen todas las pantallas para este módulo.
 - Para el módulo 3 es imprescindible que realicéis la vista para añadir proyectos proyectos-molones-add-table-desktop .
 - No esta maquetada una página de inicio que luego te lleve a la página del formulario para crear un proyecto, pero sois libres de crearla si queréis.
+
+## PLANIFICACIÓN TÉCNICA
+
+1. Presentación y planning del proyecto
+   Crear el tablero de tareas globales, establecer los working agreements, organizar el trabajo y planificar cuando y como van a realizar las tareas.
+
+Crear un repositorio en Github con un template de React para comenzar a trabajar.
+
+Crea el HTML y CSS del proyecto, crea el componente App.js y los estilos correspondientes.
+
+Para la maquetación os proporcionamos un repositorio con el html y css base que podéis utilizar y adaptar a vuestro proyecto.
+
+Recuerda que la maquetación del proyecto es libre, cada equipo puede personalizar su proyecto como considere.
+
+2. Eventos y estado
+   Piensa cuales son las variables de estado que necesitas para gestionar la aplicación y créalas.
+
+Trabajar con objetos, convertir las variables de estado en una única variable de estado que almacene un objeto.
+
+Crea las funciones manejadoras de los eventos para cuando cambian los valores de los inputs del formulario de crear la tarjeta de proyecto.
+
+Muestra los valores que escribe la usuaria en la tarjeta de previsualización.
+
+3. Componentes y props
+   Crea la estructura de componentes para tu aplicación.
+
+4. Lifting
+   Usa props y lifting cada vez que necesites que tus componentes se comuniquen.
+
+5. Fetch y local storage
+   Haz el fetch al API, específicamente al endpoint https://api-pw.dev.adalab.es/api/projectCard para crear la tarjeta de previsualización de la tarjeta Recuerda mostrar la url de tarjeta de previsualización del proyecto.
+
+Despliega la página en GitHub Pages.
+
+6. Router
+   Se creativo y crea una página de inicio de tu aplicación que te lleve a la página de crear el proyecto.
+
+Trabajo en equipo para completar tareas y resolver dudas.
+
+Guarda los datos que escriba la usuaria en el localStorage.
+
+7. Formularios
+   Optimiza los el código y crea una única función para controlar todos los cambios que se producen en el formulario.
+
+Realizar validaciones de datos del formulario: campos obligatorios, email, etc.
