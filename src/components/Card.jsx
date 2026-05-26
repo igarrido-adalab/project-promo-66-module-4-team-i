@@ -1,15 +1,6 @@
 function Card({ data }) {
-  const {
-    name = 'Elegant Workspace',
-    slogan = 'Diseños Exclusivos',
-    technologies = 'React JS - HTML - CSS',
-    repo = '#',
-    demo = '#',
-    desc = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, quos? Itaque, molestias eveniet laudantium adipisci vitae ratione',
-    autor = 'Emmelie Bjôrklund',
-    job = 'Full stack Developer',
-    photo = '',
-  } = data;
+  const { name, slogan, technologies, repo, demo, desc, autor, job, photo } =
+    data;
 
   return (
     <article className="card">
@@ -22,18 +13,23 @@ function Card({ data }) {
           className="card__authorPhoto"
           style={{ backgroundImage: photo ? `url(${photo})` : '' }}
         ></div>
-        <p className="card__job">{job}</p>
-        <h3 className="card__name">{autor}</h3>
+        <p className="card__job">{job || 'Full stack Developer'}</p>
+        <h3 className="card__name">{autor || 'Emmelie Bjôrklund'}</h3>
       </div>
 
       <div className="card__project">
-        <h3 className="card__name">{name}</h3>
-        <p className="card__slogan">{slogan}</p>
+        <h3 className="card__name">{name || 'Elegant Workspace'}</h3>
+        <p className="card__slogan">{slogan || 'Diseños Exclusivos'}</p>
         <h3 className="card__descriptionTitle">Product description</h3>
-        <p className="card__description">{desc}</p>
+        <p className="card__description">
+          {desc ||
+            'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, quos? Itaque, molestias eveniet laudantium adipisci vitae ratione'}
+        </p>
 
         <div className="card__technicalInfo">
-          <p className="card__technologies">{technologies}</p>
+          <p className="card__technologies">
+            {technologies || 'React JS - HTML - CSS'}
+          </p>
 
           <a
             className="icon icon__www"
