@@ -4,7 +4,7 @@ Aplicaci√≥n web desarrollada con React que permite crear tarjetas de presentaci√
 
 ## Demo
 
-[Ver proyecto desplegado](URL_DEL_DEPLOY)
+[Ver proyecto desplegado](https://eesser98.github.io/project-promo-66-module-3-team-1/)
 
 ## Funcionalidades
 
