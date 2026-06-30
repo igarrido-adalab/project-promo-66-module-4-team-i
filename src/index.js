@@ -8,7 +8,7 @@ const server = express();
 
 // Arrancamos el server
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 server.listen(port, () => {
   console.log(`El servidor se ha iniciado en <http://localhost:${port}/>`);
 });
